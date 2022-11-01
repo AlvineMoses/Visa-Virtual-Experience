@@ -1,0 +1,27 @@
+#Case 1: 
+Your company would like to provide a discount to customers who pay for a product using a Visa Signature card in the United States.
+
+In this instance, it would be expidient to use the Visa Card Eligibility Service API. This would check whether a costomer's card is eligible for the discount (i.e is a Visa Signature card, and payment was made in the United States), and return the appropriate card details.
+
+#Case 2: 
+A company wants to register a portfolio of cards at your financial institution so that all its business accounts are managed in one place.
+
+To register a portfolio of cards, we'd use the Visa B2B Payment Controls API. We would first add the individual company and then register their cards as needed. This portfolio allows us to set up controls across various accounts.
+
+#Case 3: 
+Clients at your financial institution often contact customer service because they don’t recognize the transactions that appear on their cards, even if these transactions are valid. Your company wants to provide its clients with cleaner, easier-to-read transaction histories.
+
+Here, we'd use the Merchant Search API in order to provide clients with cleaner merchant names. This API would allow our clients to search for readable merchant names based on the provided merchant name or other identifying attributes. If the entire merchant name is not provided by the source, it can also use wildcard sources to identify the best guess.
+
+$Case 4: 
+Even after providing clients with cleaner merchant names, your financial institution still receives disputes of valid transactions. To reduce the rates of disputes, you’d like to provide customers with a way to retrieve additional information about their purchases.
+
+We would then resort to employing the Visa Cardholder Purchase Inquiry service, providing our clients with more information about their purchases. This service is a composite of two APIs:
+
+the SICardholderPurchaseInquiry API
+the SIGetCardholderPurchaseInquiry API. 
+While both API's provide customers with additional information about their purchases, the difference is;
+
+SICardholderPurchaseInquiry- acquires data based on the transaction’s VisaNet data 
+SIGetCardholderPurchaseInquiry- acquires information based on the transaction ID. 
+Thisnotwithstanding, use of both would return detailed information about client transaction, lowering their likelihood to file disputes.
